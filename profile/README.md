@@ -91,8 +91,8 @@ CLI, API, CI/CD, hosted campaigns and machine-readable evidence are first-class 
 ## 🧭 Two independent security surfaces
 
 <div align="center">
-  <a href="assets/klaros-products-overview.webp">
-    <img src="assets/klaros-products-overview.webp" alt="Klaros Engine and Klaros Firewall — two independent security products" width="1200" />
+  <a href="https://raw.githubusercontent.com/GetKlaros/.github/main/profile/assets/klaros-products-overview.webp">
+    <img src="https://raw.githubusercontent.com/GetKlaros/.github/main/profile/assets/klaros-products-overview.webp" alt="Klaros Engine and Klaros Firewall — two independent security products" width="1200" />
   </a>
 </div>
 
