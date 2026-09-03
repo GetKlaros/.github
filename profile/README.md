@@ -85,19 +85,25 @@ CLI, API, CI/CD, hosted campaigns and machine-readable evidence are first-class 
 
 ## 🔄 From code to runtime
 
-```text
-          BEFORE DEPLOYMENT                     DURING AI RUNTIME
+```mermaid
+flowchart LR
+  A["⚔️ Klaros Engine"] --> A1["Map"]
+  A1 --> A2["Attack"]
+  A2 --> A3["Prove"]
+  A3 --> A4["Replay"]
 
-        ⚔️ Klaros Engine                       🛡️ Klaros Firewall
+  B["🛡️ Klaros Firewall"] --> B1["Inspect"]
+  B1 --> B2["Detect"]
+  B2 --> B3["Decide"]
+  B3 --> B4["Enforce"]
 
-      Find attack paths                       Inspect AI traffic
-             ↓                                        ↓
-      Prove exploitability                    Detect risky content
-             ↓                                        ↓
-      Replay independently                    Apply policy
-             ↓                                        ↓
-      Fix & retest                            Allow / sanitize / block
+  A4 -. "before release" .-> B
 ```
+
+<p align="center">
+  <strong>Before deployment:</strong> find and prove exploitable weaknesses.<br />
+  <strong>During AI runtime:</strong> inspect traffic and enforce policy in real time.
+</p>
 
 Klaros is being built around a simple idea: **security controls should either prevent a real failure or prove that a real failure exists.**
 
