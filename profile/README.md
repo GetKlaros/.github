@@ -102,19 +102,6 @@ CLI, API, CI/CD, hosted campaigns and machine-readable evidence are first-class 
 
 ---
 
-## 🧩 The Klaros stack
-
-| Project | Role |
-| --- | --- |
-| ⚔️ **Klaros Engine** | Autonomous offensive-security execution, evidence and replay |
-| 🛡️ **Klaros Firewall** | LLM traffic inspection, detection and policy enforcement |
-| 🧠 **Klaros Classifier** | Low-latency local prompt-attack detection for the firewall |
-| 🧩 **Klaros Skills** | Specialist offensive-security knowledge used by Engine agents |
-| ☁️ **Klaros SaaS** | Web control plane, campaigns, organizations, workers and live findings |
-| 🧪 **Klaros Research** | Benchmarks, reproducible methodology and security research |
-
----
-
 ## 🔄 From code to runtime
 
 ```text
