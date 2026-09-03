@@ -30,56 +30,37 @@
 
 ---
 
-## 🔐 One security stack. Two directions.
+## 🔐 Two products. One security philosophy.
+
+<p align="center">
+  <strong>Prove what can be exploited. Control what crosses your AI boundary.</strong>
+</p>
 
 <table>
 <tr>
-<td width="50%" valign="top">
-
-### ⚔️ Klaros Engine
-
-**Find and prove exploitable vulnerabilities before attackers do.**
-
-Autonomous multi-agent pentesting for:
-
-- Web applications & APIs
-- source code & repositories
-- pull requests / CI
-- authentication & business logic
-- Web3 / EVM
-
-```text
-MAP → ATTACK → PROVE → REPLAY
-```
-
-Klaros Engine does not stop at suspicious signals. It builds attack hypotheses, executes controlled tests, preserves evidence and independently replays material findings before reporting them.
-
-**Built for security teams that want proof — not another alert feed.**
-
+<td width="50%" align="center" valign="top">
+<br />
+<h3>⚔️ Klaros Engine</h3>
+<p><strong>Prove what is actually exploitable.</strong></p>
+<p><sub>AUTONOMOUS OFFENSIVE SECURITY</sub></p>
+<p>Web & APIs · Source code · Pull requests · Web3 / EVM</p>
+<p><code>MAP → ATTACK → PROVE → REPLAY</code></p>
+<p>Multi-agent pentesting that executes real tests, preserves evidence and independently validates material findings before reporting them.</p>
+<p><strong>Proof, not another alert feed.</strong></p>
+<p><a href="https://github.com/GetKlaros/klaros-engine"><strong>Explore Klaros Engine →</strong></a></p>
+<br />
 </td>
-<td width="50%" valign="top">
-
-### 🛡️ Klaros Firewall
-
-**Control what crosses your AI boundary.**
-
-A local, provider-neutral security layer for applications using LLMs:
-
-- prompt-attack detection
-- PII & sensitive-data detection
-- secret detection
-- custom organizational policies
-- sanitize / quarantine / block decisions
-- OpenAI-compatible proxy + API
-
-```text
-INSPECT → DECIDE → ENFORCE
-```
-
-Klaros Firewall is designed to inspect AI traffic locally and apply policy before sensitive content or unsafe interactions reach external model providers.
-
-**Local-first controls for AI applications and enterprise LLM usage.**
-
+<td width="50%" align="center" valign="top">
+<br />
+<h3>🛡️ Klaros Firewall</h3>
+<p><strong>Control what reaches your models.</strong></p>
+<p><sub>LOCAL-FIRST AI RUNTIME SECURITY</sub></p>
+<p>Prompt attacks · PII · Secrets · Policy enforcement</p>
+<p><code>INSPECT → DETECT → DECIDE → ENFORCE</code></p>
+<p>A provider-neutral AI security layer that inspects content locally and applies policy before sensitive or unsafe interactions continue.</p>
+<p><strong>Keep the AI boundary under your control.</strong></p>
+<p><a href="https://github.com/GetKlaros/klaros-firewall"><strong>Explore Klaros Firewall →</strong></a></p>
+<br />
 </td>
 </tr>
 </table>
