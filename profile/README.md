@@ -1,99 +1,160 @@
 <p align="center">
   <a href="https://getklaros.com">
-    <img
-      src="https://github.com/GetKlaros.png?size=160"
-      width="112"
-      alt="Klaros"
-    />
+    <img src="https://github.com/GetKlaros.png?size=160" width="112" alt="Klaros" />
   </a>
 </p>
 
 <h1 align="center">Klaros</h1>
 
 <p align="center">
-  <strong>Find what attackers will.</strong>
+  <strong>Security that attacks, proves, and protects.</strong>
 </p>
 
 <p align="center">
-  Security products for the applications organizations build and the AI systems they use.
+  Autonomous offensive security + runtime protection for the AI era.
 </p>
 
 <p align="center">
-  <a href="https://getklaros.com">Website</a>
+  <img src="https://img.shields.io/badge/⚔️_Offensive_Security-Klaros_Engine-111827?style=flat-square" alt="Klaros Engine" />
+  <img src="https://img.shields.io/badge/🛡️_AI_Security-Klaros_Firewall-111827?style=flat-square" alt="Klaros Firewall" />
+  <img src="https://img.shields.io/badge/status-early_access-f59e0b?style=flat-square" alt="Early access" />
+</p>
+
+<p align="center">
+  <a href="https://getklaros.com"><strong>Website</strong></a>
+  ·
+  <a href="mailto:hello@getklaros.com?subject=Klaros%20early%20access"><strong>Early access</strong></a>
   ·
   <a href="mailto:hello@getklaros.com">Contact</a>
-  ·
-  <a href="mailto:hello@getklaros.com?subject=Klaros%20early%20access">Request early access</a>
 </p>
 
 ---
 
-Klaros builds security products that help organizations prevent exposure, discover exploitable weaknesses and verify that their defenses work.
+## 🔐 One security stack. Two directions.
 
-## Products
+<table>
+<tr>
+<td width="50%" valign="top">
 
-### Klaros Firewall
+### ⚔️ Klaros Engine
 
-**AI / LLM security at the boundary between your organization and external model providers.**
+**Find and prove exploitable vulnerabilities before attackers do.**
 
-Klaros Firewall is designed to:
+Autonomous multi-agent pentesting for:
 
-- inspect requests and responses passing through AI systems;
-- detect and protect sensitive or personal data;
-- enforce organizational AI usage policies;
-- identify prompt injection and unsafe model interactions;
-- provide visibility into how AI services are used;
-- reduce direct exposure to external model providers.
-
-### Klaros Attack
-
-**Autonomous offensive security with reproducible proof.**
-
-Klaros Attack actively tests web applications, APIs, source code and pull requests. It maps the attack surface, pursues viable attack paths and independently reproduces impact before a vulnerability becomes a customer-facing finding.
+- Web applications & APIs
+- source code & repositories
+- pull requests / CI
+- authentication & business logic
+- Web3 / EVM
 
 ```text
-MAP → ATTACK → VERIFY
+MAP → ATTACK → PROVE → REPLAY
 ```
 
-- **Map the boundary** — understand routes, identities, permissions, state transitions and data flows.
-- **Pursue exploitability** — investigate authorization, authentication, injections, browser behavior, SSRF, APIs and business logic.
-- **Attack the authorized target** — execute controlled offensive tests instead of stopping at theoretical weaknesses.
-- **Replay independently** — reproduce candidates from a clean baseline before reporting them.
-- **Preserve the evidence** — retain the context required to reproduce, remediate and retest each finding.
+Klaros Engine does not stop at suspicious signals. It builds attack hypotheses, executes controlled tests, preserves evidence and independently replays material findings before reporting them.
 
-## Security across the organization
+**Built for security teams that want proof — not another alert feed.**
 
-Klaros is being built to protect and test:
+</td>
+<td width="50%" valign="top">
 
-- AI applications and agents;
-- employee interactions with external LLM providers;
-- sensitive data crossing AI boundaries;
-- web applications and APIs;
-- source code and pull requests;
-- authentication and authorization boundaries;
-- business logic and stateful workflows.
+### 🛡️ Klaros Firewall
 
-## Principles
+**Control what crosses your AI boundary.**
 
-### Prevent where possible
+A local, provider-neutral security layer for applications using LLMs:
 
-Apply controls before sensitive information or unsafe instructions reach an external AI provider.
+- prompt-attack detection
+- PII & sensitive-data detection
+- secret detection
+- custom organizational policies
+- sanitize / quarantine / block decisions
+- OpenAI-compatible proxy + API
 
-### Attack what matters
+```text
+INSPECT → DECIDE → ENFORCE
+```
 
-Focus offensive effort on realistic attack paths rather than maximizing alert volume.
+Klaros Firewall is designed to inspect AI traffic locally and apply policy before sensitive content or unsafe interactions reach external model providers.
 
-### Prove before reporting
+**Local-first controls for AI applications and enterprise LLM usage.**
 
-Separate suspicious signals from vulnerabilities with reproducible impact.
+</td>
+</tr>
+</table>
 
-### Preserve the evidence
+---
 
-Keep the context required to understand, replay and retest every verified security failure.
+## 🧠 Why Klaros
 
-## Early access
+**✅ Proof over alerts**  
+A finding should survive validation and replay, not just match a rule.
 
-Klaros is opening early access to organizations that want stronger control over AI usage and reproducible security findings instead of another stream of alerts.
+**🔒 Local-first where it matters**  
+Security-sensitive content can stay inside your environment.
 
-- **Website:** [getklaros.com](https://getklaros.com)
-- **Contact:** [hello@getklaros.com](mailto:hello@getklaros.com)
+**🔌 Provider-neutral**  
+Klaros is designed around your security boundary, not a single model or cloud provider.
+
+**🤖 Built for automation**  
+CLI, API, CI/CD, hosted campaigns and machine-readable evidence are first-class workflows.
+
+---
+
+## 🧩 The Klaros stack
+
+| Project | Role |
+| --- | --- |
+| ⚔️ **Klaros Engine** | Autonomous offensive-security execution, evidence and replay |
+| 🛡️ **Klaros Firewall** | LLM traffic inspection, detection and policy enforcement |
+| 🧠 **Klaros Classifier** | Low-latency local prompt-attack detection for the firewall |
+| 🧩 **Klaros Skills** | Specialist offensive-security knowledge used by Engine agents |
+| ☁️ **Klaros SaaS** | Web control plane, campaigns, organizations, workers and live findings |
+| 🧪 **Klaros Research** | Benchmarks, reproducible methodology and security research |
+
+---
+
+## 🔄 From code to runtime
+
+```text
+          BEFORE DEPLOYMENT                     DURING AI RUNTIME
+
+        ⚔️ Klaros Engine                       🛡️ Klaros Firewall
+
+      Find attack paths                       Inspect AI traffic
+             ↓                                        ↓
+      Prove exploitability                    Detect risky content
+             ↓                                        ↓
+      Replay independently                    Apply policy
+             ↓                                        ↓
+      Fix & retest                            Allow / sanitize / block
+```
+
+Klaros is being built around a simple idea: **security controls should either prevent a real failure or prove that a real failure exists.**
+
+---
+
+## 🚧 Current product stage
+
+- **Klaros Engine** — Alpha; real Web/API/code/CI/Web3 offensive workflows are running today.
+- **Klaros Firewall Community** — Pre-alpha; local API, policy engine, built-in detectors, proxy and operator UI are available in development.
+- **Klaros SaaS** — Early hosted control plane with campaigns, immutable snapshots, live events, findings and reports.
+
+We are actively working with early users while the public product surface is being finalized.
+
+---
+
+## 📬 Early access
+
+If you are building AI systems, running application security programs, or want autonomous pentesting with reproducible evidence:
+
+<p align="center">
+  <a href="mailto:hello@getklaros.com?subject=Klaros%20early%20access"><strong>→ Request early access</strong></a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://getklaros.com"><strong>getklaros.com</strong></a>
+</p>
+
+<p align="center">
+  <sub>Authorized security testing only. Klaros offensive products are intended for systems you own or are explicitly permitted to test.</sub>
+</p>
