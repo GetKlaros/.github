@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  Autonomous offensive security + runtime protection for the AI era.
+  Autonomous offensive security + AI runtime protection.
 </p>
 
 <p align="center">
@@ -33,7 +33,8 @@
 ## 🔐 Two products. One security philosophy.
 
 <p align="center">
-  <strong>Prove what can be exploited. Control what crosses your AI boundary.</strong>
+  <strong>Independent products for different security problems.</strong><br />
+  Prove what can be exploited. Control what crosses your AI boundary.
 </p>
 
 <table>
@@ -65,6 +66,10 @@
 </tr>
 </table>
 
+<p align="center">
+  <sub>Klaros Engine and Klaros Firewall can be deployed and used independently. Neither product requires the other.</sub>
+</p>
+
 ---
 
 ## 🧠 Why Klaros
@@ -83,44 +88,54 @@ CLI, API, CI/CD, hosted campaigns and machine-readable evidence are first-class 
 
 ---
 
-## 🔄 From code to runtime
+## 🧭 Two independent security surfaces
 
-```mermaid
-flowchart LR
-  subgraph PRE["⚔️ BEFORE DEPLOYMENT"]
-    direction TB
-    E0["Klaros Engine"]
-    E1["Map attack surface"]
-    E2["Attack"]
-    E3["Prove exploitability"]
-    E4["Replay independently"]
-    E0 --> E1 --> E2 --> E3 --> E4
-  end
+<table>
+<tr>
+<td width="50%" valign="top">
 
-  subgraph RUN["🛡️ DURING AI RUNTIME"]
-    direction TB
-    F0["Klaros Firewall"]
-    F1["Inspect AI traffic"]
-    F2["Detect risky content"]
-    F3["Decide policy"]
-    F4["Enforce"]
-    F0 --> F1 --> F2 --> F3 --> F4
-  end
+### ⚔️ Application security
 
-  E4 -. "release" .-> F0
+**Klaros Engine**
 
-  classDef engine fill:#f5f3ff,stroke:#7c3aed,color:#111827;
-  classDef firewall fill:#ecfeff,stroke:#0891b2,color:#111827;
-  class E0,E1,E2,E3,E4 engine;
-  class F0,F1,F2,F3,F4 firewall;
+```text
+Discover attack surface
+        ↓
+Execute real attacks
+        ↓
+Prove exploitability
+        ↓
+Replay independently
 ```
 
-<p align="center">
-  <strong>Before deployment:</strong> find and prove exploitable weaknesses.<br />
-  <strong>During AI runtime:</strong> inspect traffic and enforce policy in real time.
-</p>
+**Goal:** demonstrate which weaknesses are actually exploitable.
 
-Klaros is being built around a simple idea: **security controls should either prevent a real failure or prove that a real failure exists.**
+</td>
+<td width="50%" valign="top">
+
+### 🛡️ AI runtime security
+
+**Klaros Firewall**
+
+```text
+Inspect AI content
+        ↓
+Detect risky signals
+        ↓
+Apply policy
+        ↓
+Enforce the decision
+```
+
+**Goal:** control sensitive or unsafe content crossing the AI boundary.
+
+</td>
+</tr>
+</table>
+
+<p align="center">
+  <strong>Different products. Different execution paths. Shared focus on evidence and enforceable security decisions.</strong>
+</p>
 
 ---
 
