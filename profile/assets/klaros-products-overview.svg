@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="940" viewBox="0 0 1400 940" role="img" aria-labelledby="title desc">
+  <title id="title">Klaros Engine and Klaros Firewall — two independent security products</title>
+  <desc id="desc">Hand-drawn style diagram showing Klaros Engine for application security and Klaros Firewall for AI runtime security as independent products.</desc>
+  <defs>
+    <filter id="paper" x="-3%" y="-3%" width="106%" height="106%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="9" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.7" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <style>
+      .hand { font-family: "Comic Sans MS", "Segoe Print", "Bradley Hand", cursive; }
+      .ink { fill:#16181d; }
+      .muted { fill:#50545d; }
+      .purple { fill:#6542a6; }
+      .teal { fill:#087f82; }
+      .purple-stroke { stroke:#6d4aad; }
+      .teal-stroke { stroke:#16888b; }
+      .rough { stroke-linecap:round; stroke-linejoin:round; filter:url(#paper); }
+    </style>
+  </defs>
+
+  <rect width="1400" height="940" fill="#ffffff"/>
+
+  <text x="700" y="58" text-anchor="middle" class="hand ink" font-size="46" font-weight="700">Two independent products</text>
+  <text x="700" y="92" text-anchor="middle" class="hand muted" font-size="23">Different security problems. Same focus on evidence and enforceable decisions.</text>
+
+  <!-- ENGINE PANEL -->
+  <rect x="55" y="125" width="610" height="700" rx="34" fill="#fdfbff" stroke="#6d4aad" stroke-width="3" stroke-dasharray="10 8" class="rough"/>
+  <path d="M105 182 L126 203 M126 182 L105 203" fill="none" stroke="#6d4aad" stroke-width="6" class="rough"/>
+  <path d="M101 171 L130 212 M130 171 L101 212" fill="none" stroke="#24262c" stroke-width="2" class="rough"/>
+  <text x="145" y="178" class="hand purple" font-size="27" font-weight="700">APPLICATION SECURITY</text>
+  <text x="145" y="220" class="hand purple" font-size="39" font-weight="700">Klaros Engine</text>
+  <text x="145" y="252" class="hand ink" font-size="22">Autonomous offensive security</text>
+
+  <!-- engine card 1 -->
+  <rect x="92" y="285" width="536" height="112" rx="20" fill="#ffffff" stroke="#7652b6" stroke-width="2.4" class="rough"/>
+  <circle cx="126" cy="320" r="21" fill="#faf7ff" stroke="#7652b6" stroke-width="2.4"/><text x="126" y="328" text-anchor="middle" class="hand purple" font-size="23" font-weight="700">1</text>
+  <path d="M174 312 L207 294 L238 313 L238 359 L206 376 L174 358 Z M207 294 L207 376 M174 312 L207 329 L238 313" fill="none" stroke="#26282e" stroke-width="2.4" class="rough"/>
+  <path d="M185 340 C196 327 213 333 226 320" fill="none" stroke="#7652b6" stroke-width="2.4" stroke-dasharray="5 5"/>
+  <text x="274" y="320" class="hand purple" font-size="27" font-weight="700">MAP</text>
+  <text x="274" y="347" class="hand ink" font-size="20">Map the attack surface</text>
+  <text x="274" y="373" class="hand muted" font-size="17">Web, APIs, code, pull requests, Web3 / EVM</text>
+
+  <!-- engine card 2 -->
+  <rect x="92" y="410" width="536" height="112" rx="20" fill="#ffffff" stroke="#7652b6" stroke-width="2.4" class="rough"/>
+  <circle cx="126" cy="445" r="21" fill="#faf7ff" stroke="#7652b6" stroke-width="2.4"/><text x="126" y="453" text-anchor="middle" class="hand purple" font-size="23" font-weight="700">2</text>
+  <path d="M187 490 C174 477 177 455 186 438 C192 425 202 417 209 417 C218 417 228 426 234 439 C244 458 245 478 231 490 Z" fill="#f0eaff" stroke="#26282e" stroke-width="2.2" class="rough"/>
+  <rect x="188" y="461" width="43" height="26" rx="4" fill="#ffffff" stroke="#26282e" stroke-width="2"/>
+  <text x="209" y="480" text-anchor="middle" class="hand purple" font-size="15" font-weight="700">&lt;/&gt;</text>
+  <text x="274" y="445" class="hand purple" font-size="27" font-weight="700">ATTACK</text>
+  <text x="274" y="472" class="hand ink" font-size="20">Execute real tests</text>
+  <text x="274" y="498" class="hand muted" font-size="17">Autonomous multi-agent offensive exploration</text>
+
+  <!-- engine card 3 -->
+  <rect x="92" y="535" width="536" height="112" rx="20" fill="#ffffff" stroke="#7652b6" stroke-width="2.4" class="rough"/>
+  <circle cx="126" cy="570" r="21" fill="#faf7ff" stroke="#7652b6" stroke-width="2.4"/><text x="126" y="578" text-anchor="middle" class="hand purple" font-size="23" font-weight="700">3</text>
+  <path d="M207 548 L239 561 L235 596 C232 616 219 627 207 634 C195 627 182 616 179 596 L175 561 Z" fill="#f4efff" stroke="#26282e" stroke-width="2.4" class="rough"/>
+  <path d="M193 591 L203 601 L222 578" fill="none" stroke="#6542a6" stroke-width="4" class="rough"/>
+  <text x="274" y="570" class="hand purple" font-size="27" font-weight="700">PROVE</text>
+  <text x="274" y="597" class="hand ink" font-size="20">Validate exploitability</text>
+  <text x="274" y="623" class="hand muted" font-size="17">High-confidence evidence before reporting</text>
+
+  <!-- engine card 4 -->
+  <rect x="92" y="660" width="536" height="112" rx="20" fill="#ffffff" stroke="#7652b6" stroke-width="2.4" class="rough"/>
+  <circle cx="126" cy="695" r="21" fill="#faf7ff" stroke="#7652b6" stroke-width="2.4"/><text x="126" y="703" text-anchor="middle" class="hand purple" font-size="23" font-weight="700">4</text>
+  <path d="M181 704 C183 677 207 664 229 677 C239 683 244 693 244 704 M236 690 L244 704 L229 706" fill="none" stroke="#26282e" stroke-width="2.7" class="rough"/>
+  <path d="M237 716 C232 741 207 750 187 736 C179 730 175 720 176 711 M183 725 L176 711 L191 710" fill="none" stroke="#6542a6" stroke-width="2.7" class="rough"/>
+  <path d="M202 693 L202 722 L224 707 Z" fill="#7652b6" opacity=".85"/>
+  <text x="274" y="695" class="hand purple" font-size="27" font-weight="700">REPLAY</text>
+  <text x="274" y="722" class="hand ink" font-size="20">Reproduce independently</text>
+  <text x="274" y="748" class="hand muted" font-size="17">Clean replay steps and durable proof</text>
+
+  <rect x="92" y="786" width="536" height="54" rx="18" fill="#f6f1ff" stroke="#7652b6" stroke-width="2" class="rough"/>
+  <text x="360" y="821" text-anchor="middle" class="hand purple" font-size="22" font-weight="700">Goal: prove what is exploitable</text>
+
+  <!-- FIREWALL PANEL -->
+  <rect x="735" y="125" width="610" height="700" rx="34" fill="#f9ffff" stroke="#16888b" stroke-width="3" stroke-dasharray="10 8" class="rough"/>
+  <path d="M790 169 L824 181 L820 210 C817 226 806 235 790 244 C774 235 763 226 760 210 L756 181 Z" fill="#e9fbfb" stroke="#26282e" stroke-width="2.2" class="rough"/>
+  <path d="M780 202 L788 210 L803 190" fill="none" stroke="#16888b" stroke-width="3.5" class="rough"/>
+  <text x="845" y="178" class="hand teal" font-size="27" font-weight="700">AI RUNTIME SECURITY</text>
+  <text x="845" y="220" class="hand teal" font-size="39" font-weight="700">Klaros Firewall</text>
+  <text x="845" y="252" class="hand ink" font-size="22">Local-first policy and detection</text>
+
+  <!-- fw card 1 -->
+  <rect x="772" y="285" width="536" height="112" rx="20" fill="#ffffff" stroke="#16888b" stroke-width="2.4" class="rough"/>
+  <circle cx="806" cy="320" r="21" fill="#f1ffff" stroke="#16888b" stroke-width="2.4"/><text x="806" y="328" text-anchor="middle" class="hand teal" font-size="23" font-weight="700">1</text>
+  <path d="M864 300 L904 300 L918 315 L918 350 L864 350 Z M904 300 L904 315 L918 315" fill="#ffffff" stroke="#26282e" stroke-width="2.2" class="rough"/>
+  <circle cx="868" cy="351" r="18" fill="#e8fbfb" stroke="#16888b" stroke-width="3"/>
+  <path d="M881 364 L897 380" stroke="#26282e" stroke-width="4" class="rough"/>
+  <text x="954" y="320" class="hand teal" font-size="27" font-weight="700">INSPECT</text>
+  <text x="954" y="347" class="hand ink" font-size="20">Inspect AI content</text>
+  <text x="954" y="373" class="hand muted" font-size="17">Prompts, documents, tool outputs and responses</text>
+
+  <!-- fw card 2 -->
+  <rect x="772" y="410" width="536" height="112" rx="20" fill="#ffffff" stroke="#16888b" stroke-width="2.4" class="rough"/>
+  <circle cx="806" cy="445" r="21" fill="#f1ffff" stroke="#16888b" stroke-width="2.4"/><text x="806" y="453" text-anchor="middle" class="hand teal" font-size="23" font-weight="700">2</text>
+  <path d="M890 422 L930 491 L850 491 Z" fill="#eafcfc" stroke="#26282e" stroke-width="2.4" class="rough"/>
+  <path d="M890 443 L890 469" stroke="#16888b" stroke-width="5" class="rough"/><circle cx="890" cy="480" r="3.5" fill="#16888b"/>
+  <text x="954" y="445" class="hand teal" font-size="27" font-weight="700">DETECT</text>
+  <text x="954" y="472" class="hand ink" font-size="20">Detect risky content</text>
+  <text x="954" y="498" class="hand muted" font-size="17">Prompt attacks, PII, secrets, policy violations</text>
+
+  <!-- fw card 3 -->
+  <rect x="772" y="535" width="536" height="112" rx="20" fill="#ffffff" stroke="#16888b" stroke-width="2.4" class="rough"/>
+  <circle cx="806" cy="570" r="21" fill="#f1ffff" stroke="#16888b" stroke-width="2.4"/><text x="806" y="578" text-anchor="middle" class="hand teal" font-size="23" font-weight="700">3</text>
+  <rect x="851" y="550" width="62" height="76" rx="5" fill="#f9ffff" stroke="#26282e" stroke-width="2.2" class="rough"/>
+  <path d="M863 570 L870 577 L880 563 M863 590 L870 597 L880 583 M863 610 L870 617 L880 603" fill="none" stroke="#16888b" stroke-width="2.5" class="rough"/>
+  <path d="M889 570 L904 570 M889 590 L904 590 M889 610 L904 610" stroke="#26282e" stroke-width="2"/>
+  <circle cx="918" cy="611" r="15" fill="#e8fbfb" stroke="#16888b" stroke-width="2"/><path d="M918 591 L918 599 M918 623 L918 631 M898 611 L906 611 M930 611 L938 611" stroke="#16888b" stroke-width="2"/>
+  <text x="954" y="570" class="hand teal" font-size="27" font-weight="700">DECIDE</text>
+  <text x="954" y="597" class="hand ink" font-size="20">Apply policy</text>
+  <text x="954" y="623" class="hand muted" font-size="17">Source-aware rules and enforcement decisions</text>
+
+  <!-- fw card 4 -->
+  <rect x="772" y="660" width="536" height="112" rx="20" fill="#ffffff" stroke="#16888b" stroke-width="2.4" class="rough"/>
+  <circle cx="806" cy="695" r="21" fill="#f1ffff" stroke="#16888b" stroke-width="2.4"/><text x="806" y="703" text-anchor="middle" class="hand teal" font-size="23" font-weight="700">4</text>
+  <path d="M890 673 L927 687 L922 724 C919 742 905 753 890 762 C875 753 861 742 858 724 L853 687 Z" fill="#eafcfc" stroke="#26282e" stroke-width="2.4" class="rough"/>
+  <rect x="879" y="711" width="23" height="20" rx="3" fill="#ffffff" stroke="#16888b" stroke-width="2"/><path d="M883 711 L883 704 C883 694 898 694 898 704 L898 711" fill="none" stroke="#16888b" stroke-width="2"/>
+  <text x="954" y="695" class="hand teal" font-size="27" font-weight="700">ENFORCE</text>
+  <text x="954" y="722" class="hand ink" font-size="20">Enforce the decision</text>
+  <text x="954" y="748" class="hand muted" font-size="17">Allow, sanitize, quarantine or block</text>
+
+  <rect x="772" y="786" width="536" height="54" rx="18" fill="#ecffff" stroke="#16888b" stroke-width="2" class="rough"/>
+  <text x="1040" y="821" text-anchor="middle" class="hand teal" font-size="22" font-weight="700">Goal: control what crosses the AI boundary</text>
+
+  <!-- BOTTOM NOTE -->
+  <rect x="290" y="864" width="820" height="58" rx="22" fill="#fffaf0" stroke="#d7a323" stroke-width="2.2" class="rough"/>
+  <circle cx="334" cy="893" r="16" fill="#fff2bf" stroke="#d7a323" stroke-width="2"/>
+  <path d="M327 891 C327 882 341 882 341 891 C341 896 338 898 337 902 L331 902 C330 898 327 896 327 891 Z M331 907 L337 907" fill="none" stroke="#8b6b12" stroke-width="2" class="rough"/>
+  <text x="700" y="889" text-anchor="middle" class="hand ink" font-size="20" font-weight="700">Independent products. Different use cases. No dependency between them.</text>
+  <text x="700" y="913" text-anchor="middle" class="hand muted" font-size="17">Klaros focuses on security decisions backed by evidence and enforceable controls.</text>
+</svg>
