@@ -90,52 +90,11 @@ CLI, API, CI/CD, hosted campaigns and machine-readable evidence are first-class 
 
 ## 🧭 Two independent security surfaces
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### ⚔️ Application security
-
-**Klaros Engine**
-
-```text
-Discover attack surface
-        ↓
-Execute real attacks
-        ↓
-Prove exploitability
-        ↓
-Replay independently
-```
-
-**Goal:** demonstrate which weaknesses are actually exploitable.
-
-</td>
-<td width="50%" valign="top">
-
-### 🛡️ AI runtime security
-
-**Klaros Firewall**
-
-```text
-Inspect AI content
-        ↓
-Detect risky signals
-        ↓
-Apply policy
-        ↓
-Enforce the decision
-```
-
-**Goal:** control sensitive or unsafe content crossing the AI boundary.
-
-</td>
-</tr>
-</table>
-
-<p align="center">
-  <strong>Different products. Different execution paths. Shared focus on evidence and enforceable security decisions.</strong>
-</p>
+<div align="center">
+  <a href="assets/klaros-products-overview.svg">
+    <img src="assets/klaros-products-overview.svg" alt="Klaros Engine and Klaros Firewall — two independent security products" width="1200" />
+  </a>
+</div>
 
 ---
 
