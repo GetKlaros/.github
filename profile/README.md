@@ -87,17 +87,32 @@ CLI, API, CI/CD, hosted campaigns and machine-readable evidence are first-class 
 
 ```mermaid
 flowchart LR
-  A["⚔️ Klaros Engine"] --> A1["Map"]
-  A1 --> A2["Attack"]
-  A2 --> A3["Prove"]
-  A3 --> A4["Replay"]
+  subgraph PRE["⚔️ BEFORE DEPLOYMENT"]
+    direction TB
+    E0["Klaros Engine"]
+    E1["Map attack surface"]
+    E2["Attack"]
+    E3["Prove exploitability"]
+    E4["Replay independently"]
+    E0 --> E1 --> E2 --> E3 --> E4
+  end
 
-  B["🛡️ Klaros Firewall"] --> B1["Inspect"]
-  B1 --> B2["Detect"]
-  B2 --> B3["Decide"]
-  B3 --> B4["Enforce"]
+  subgraph RUN["🛡️ DURING AI RUNTIME"]
+    direction TB
+    F0["Klaros Firewall"]
+    F1["Inspect AI traffic"]
+    F2["Detect risky content"]
+    F3["Decide policy"]
+    F4["Enforce"]
+    F0 --> F1 --> F2 --> F3 --> F4
+  end
 
-  A4 -. "before release" .-> B
+  E4 -. "release" .-> F0
+
+  classDef engine fill:#f5f3ff,stroke:#7c3aed,color:#111827;
+  classDef firewall fill:#ecfeff,stroke:#0891b2,color:#111827;
+  class E0,E1,E2,E3,E4 engine;
+  class F0,F1,F2,F3,F4 firewall;
 ```
 
 <p align="center">
